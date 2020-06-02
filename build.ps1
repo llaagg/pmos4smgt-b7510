@@ -6,6 +6,8 @@ docker run --privileged --rm -it  pmos:dev
 #docker run -ti -d --privileged -v /dev/bus/usb:/dev/bus/usb pmos:dev
 
 # podobny do https://www.mgsm.pl/pl/katalog/samsung/gts7580/
+# porownanie z ace https://www.mgsm.pl/pl/porownanie/samsung-galaxypro-vs-samsung-gts5830ace/
+
 # Root information http://www.bernaerts-nicolas.fr/android/311-samsung-galaxy-pro-gt-b7510-root
 # https://sfirmware.com/samsung-gt-b7510/
 
@@ -17,8 +19,5 @@ docker run --privileged --rm -it  pmos:dev
 # GT-S5302, GT-S5302B (new), GT-S5302L (new), GT-S5360, GT-S5360B, GT-S5360L, GT-S5360T, GT-S5363, GT-S5367 (new), GT-S5368 (new), GT-S5369,
 # GT-S5690, GT-S5690i, GT-S5690L, GT-S5690M, GT-S5690R, GT-I8150, GT-I8150B, GT-I5510, GT-I5510B, GT-I5510L, GT-I5510M, GT-I5510T, SCH-i110 (new), 
 # SCH-i509, SCH-i559, SCH-i589(Ace Duos -Chinese/India), SGH-T499, SGH-T499Y, SGH-T499V, SGH-T499W, SGH-T589, SGH-T589R, SGH-T589W, SGH-I837, SGH-I857.
-
-# [09:30:35] *** pmaport generated: /home/pmosuser/.local/var/pmbootstrap/cache_git/pmaports/device/testing/device-samsung-gtb7510
-# [09:30:35] *** pmaport generated: /home/pmosuser/.local/var/pmbootstrap/cache_git/pmaports/device/testing/linux-samsung-gtb7510
 
 # pmbootstrap bootimg_analyze
