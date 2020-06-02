@@ -41,7 +41,9 @@ RUN mkdir -p ~/.local/var/pmbootstrap/chroot_native/dev
 
 ADD config-samsung-gtb7510.armhf /home/${USER}/.local/var/pmbootstrap/cache_git/pmaports/device/testing/linux-samsung-gtb7510/
 
-RUN pmbootstrap checksum linux-samsung-gtb7510
+RUN whoami
+
+RUN /home/pmosuser/.local/bin/pmbootstrap checksum linux-samsung-gtb7510
 
 #TODO
 # 1. consume all paramters from comand line for pmbootstrap init
