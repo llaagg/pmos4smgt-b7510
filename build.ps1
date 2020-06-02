@@ -10,6 +10,7 @@ docker run --privileged --rm -it  pmos:dev
 
 # Root information http://www.bernaerts-nicolas.fr/android/311-samsung-galaxy-pro-gt-b7510-root
 # https://sfirmware.com/samsung-gt-b7510/
+# https://wiki.postmarketos.org/wiki/Samsung_Galaxy_Ace_(samsung-s5830)
 
 #compatible SAMSUNG GALAXY MODELS: GT-S5570, GT-S5570B, GT-S5570I, GT-S5570L, GT-S5571, GT-S5578 (Chinese-Mini), 
 # GT-S5660, GT-S5660M, GT-S5660L, GT-S5660V, SHW-M290K (Korean-Gio), GT-S5670, GT-S5670B, GT-S5670L, GT-S5830, GT-S5830B, 

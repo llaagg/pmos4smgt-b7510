@@ -39,6 +39,8 @@ RUN sed -i -e '/pkgver/ s/=.*/=3.0.31/' ~/.local/var/pmbootstrap/cache_git/pmapo
 # not sure if that should be done
 RUN mkdir -p ~/.local/var/pmbootstrap/chroot_native/dev
 
+ADD config-samsung-gtb7510.armhf /home/${USER}/.local/var/pmbootstrap/cache_git/pmaports/device/testing/linux-samsung-gtb7510/
+
 RUN pmbootstrap checksum linux-samsung-gtb7510
 
 #TODO
