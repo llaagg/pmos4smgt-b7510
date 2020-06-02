@@ -29,6 +29,8 @@ RUN cat ~/config.cfg | pmbootstrap init
 RUN sed -i -e '/_repository/ s/=.*/=android_kernel_samsung_msm/' ~/.local/var/pmbootstrap/cache_git/pmaports/device/testing/linux-samsung-gtb7510/APKBUILD 
 RUN sed -i -e '/_commit=/ s/=.*/=25f2ea57bae01ffe86e1da7232d1855394c054b2/' ~/.local/var/pmbootstrap/cache_git/pmaports/device/testing/linux-samsung-gtb7510/APKBUILD 
 RUN sed -i -e '/$pkgname-$_commit.tar.gz/ s/::.*/::https:\/\/github.com\/MardonHH\/$_repository\/archive\/$_commit.tar.gz/' ~/.local/var/pmbootstrap/cache_git/pmaports/device/testing/linux-samsung-gtb7510/APKBUILD 
+
+#version same is makefile of the kernel
 RUN sed -i -e '/pkgver/ s/=.*/=3.0.31/' ~/.local/var/pmbootstrap/cache_git/pmaports/device/testing/linux-samsung-gtb7510/APKBUILD
 
 # not sure if that should be done
