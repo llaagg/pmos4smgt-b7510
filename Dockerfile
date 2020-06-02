@@ -27,4 +27,5 @@ RUN cat config.cfg | .local/bin/pmbootstrap init
 RUN sed -i -e '/pkgver/ s/=.*/=3.0.0/' /home/pmosuser/.local/var/pmbootstrap/cache_git/pmaports/device/testing/linux-samsung-gtb7510/APKBUILD
 RUN .local/bin/pmbootstrap checksum samung-gtb7510
 
-RUN cat /home/pmosuser/.local/var/pmbootstrap/log.txt
+# RUN cat /home/pmosuser/.local/var/pmbootstrap/log.txt
+RUN tail /home/pmosuser/.local/var/pmbootstrap/log.txt -n 60
