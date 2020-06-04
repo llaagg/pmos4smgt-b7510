@@ -1,7 +1,7 @@
 docker build . -t pmos:dev -f 'Dockerfile'
 
 # mount needs that: --privileged
-docker run --privileged --rm -it  pmos:dev
+docker run --privileged --rm -it pmos:dev
 
 #docker run -ti -d --privileged -v /dev/bus/usb:/dev/bus/usb pmos:dev
 
