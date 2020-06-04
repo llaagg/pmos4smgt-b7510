@@ -2,10 +2,10 @@ FROM alpine
 
 ARG USER=pmosuser
 
-RUN apk update && apk upgrade && \
-    apk add --no-cache bash git openssh sudo 
-
-RUN apk add python3 coreutils procps openssl
+RUN apk update \
+    && apk upgrade \
+    && apk add --no-cache bash git openssh sudo \
+    &&apk add python3 coreutils procps openssl
 
 #usefull for obtaining boot.img
 #RUN apk --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ add android-tools
@@ -25,10 +25,6 @@ ENV PATH="/home/$USER/.local/bin:${PATH}"
 
 ADD config.cfg /home/${USER}/config.cfg
 RUN cat ~/config.cfg | pmbootstrap init
-
-# RUN cat /home/pmosuser/.local/var/pmbootstrap/log.txt
-#RUN tail /home/pmosuser/.local/var/pmbootstrap/log.txt -n 60
-
 #
 RUN sed -i -e '/\_repository=/ s/=.*/=android_kernel_samsung_msm/' ~/.local/var/pmbootstrap/cache_git/pmaports/device/testing/linux-samsung-gtb7510/APKBUILD 
 RUN sed -i -e '/\_commit=/ s/=.*/=25f2ea57bae01ffe86e1da7232d1855394c054b2/' ~/.local/var/pmbootstrap/cache_git/pmaports/device/testing/linux-samsung-gtb7510/APKBUILD 
@@ -40,7 +36,7 @@ ADD config-samsung-gtb7510.armhf /home/${USER}/.local/var/pmbootstrap/cache_git/
 
 
 # RUN pwd
-RUN ["pmbootstrap", "checksum", "linux-samsung-gtb7510"]
+CMD ["pmbootstrap", "checksum", "linux-samsung-gtb7510"]
 # RUN pmbootstrap kconfig check
 # RUN pmbootstrap kconfig edit samsung-gtb7510
 # RUN pmbootstrap build linux-samsung-gtb7510
@@ -48,3 +44,7 @@ RUN ["pmbootstrap", "checksum", "linux-samsung-gtb7510"]
 #TODO
 # 1. consume all paramters from comand line for pmbootstrap init
 
+# samsung devicde driver for adb
+# https://developer.samsung.com/mobile/android-usb-driver.html
+# boot imae testing 
+# https://android.stackexchange.com/questions/69954/how-to-unpack-and-edit-boot-img-for-rom-porting
