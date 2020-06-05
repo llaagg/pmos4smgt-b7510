@@ -60,3 +60,7 @@ RUN chmod a+x ./pmrunner.sh
 #       |         ^~~~~~~~~~~~~ 
 #       |         MSM_AD5_BASE
 # /home/pmos/build/src/android_kernel_samsung_msm-25f2ea57bae01ffe86e1da7232d1855394c054b2/arch/arm/mach-msm/spm_devices.c:176:9: note: each undeclared identifier is reported only once for each function it appears in
+# samsung devicde driver for adb
+# https://developer.samsung.com/mobile/android-usb-driver.html
+# boot imae testing 
+# https://android.stackexchange.com/questions/69954/how-to-unpack-and-edit-boot-img-for-rom-porting
