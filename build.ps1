@@ -5,6 +5,11 @@ docker run --privileged --rm -it pmos:dev
 
 #docker run -ti -d --privileged -v /dev/bus/usb:/dev/bus/usb pmos:dev
 
+# samsung devicde driver for adb
+# https://developer.samsung.com/mobile/android-usb-driver.html
+# boot imae testing 
+# https://android.stackexchange.com/questions/69954/how-to-unpack-and-edit-boot-img-for-rom-porting
+
 # podobny do https://www.mgsm.pl/pl/katalog/samsung/gts7580/
 # porownanie z ace https://www.mgsm.pl/pl/porownanie/samsung-galaxypro-vs-samsung-gts5830ace/
 

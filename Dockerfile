@@ -51,16 +51,3 @@ RUN chmod a+x ./pmrunner.sh
 
 #TODO
 # 1. consume all paramters from comand line for pmbootstrap init
-
-#  CC      arch/arm/mach-msm/spm_devices.o
-# /home/pmos/build/src/android_kernel_samsung_msm-25f2ea57bae01ffe86e1da7232d1855394c054b2/arch/arm/mach-msm/spm_devices.c: In function 'msm_spm_turn_on_cpu_rail':        
-# /home/pmos/build/src/android_kernel_samsung_msm-25f2ea57bae01ffe86e1da7232d1855394c054b2/arch/arm/mach-msm/spm_devices.c:176:9: error: 'MSM_SAW1_BASE' undeclared (first 
-# use in this function); did you mean 'MSM_AD5_BASE'?
-#   176 |   reg = MSM_SAW1_BASE;
-#       |         ^~~~~~~~~~~~~ 
-#       |         MSM_AD5_BASE
-# /home/pmos/build/src/android_kernel_samsung_msm-25f2ea57bae01ffe86e1da7232d1855394c054b2/arch/arm/mach-msm/spm_devices.c:176:9: note: each undeclared identifier is reported only once for each function it appears in
-# samsung devicde driver for adb
-# https://developer.samsung.com/mobile/android-usb-driver.html
-# boot imae testing 
-# https://android.stackexchange.com/questions/69954/how-to-unpack-and-edit-boot-img-for-rom-porting
